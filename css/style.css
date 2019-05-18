@@ -18,6 +18,8 @@ body {
      font-family: 'Roboto', sans-serif;
      text-transform: uppercase;
      letter-spacing: 3px;
+     margin: 0 auto;
+     padding: 50px 30px;
 }
 
 #container {
@@ -26,4 +28,30 @@ body {
 	padding-top: 200px;
 }
 
+#header {
+	font-weight: 900;
+	padding: 20px 0;
+}
 
+#header span {
+	font-weight: 300;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	color: #ffffff;
+	background-color: #ffffff;
+}
+
+@media only screen and (min-width: 1280px) {
+	body {
+		width: 1280px;
+	}
+}
+
+@media only screen and (max-width: 1279) {
+	body {
+		width: 100%;
+	}
+}
