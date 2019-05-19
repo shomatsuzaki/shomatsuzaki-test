@@ -14,27 +14,19 @@ body {
      color: #ffffff;
      background-color: #000;
      font-size: 10px;
-     line-height: 1.4;
      font-family: 'Roboto', sans-serif;
-     text-transform: uppercase;
      letter-spacing: 3px;
      margin: 0 auto;
-     padding: 50px 30px;
+}
+
+video {
+	width: 100%;
 }
 
 #container {
 	margin: auto;
 	text-align: center;
-	padding-top: 200px;
-}
-
-#header {
-	font-weight: 900;
-	padding: 20px 0;
-}
-
-#header span {
-	font-weight: 300;
+    padding: 50px 30px;
 }
 
 hr {
@@ -44,13 +36,13 @@ hr {
 	background-color: #ffffff;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1500px) {
 	body {
-		width: 1280px;
+		width: 1500px;
 	}
 }
 
-@media only screen and (max-width: 1279) {
+@media only screen and (max-width: 1499) {
 	body {
 		width: 100%;
 	}
