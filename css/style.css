@@ -21,7 +21,6 @@ body {
 #header {
 	display: block;
 	position: relative;
-	width: 100%;
 	padding-bottom: 56.25%;
 }
 
@@ -69,7 +68,6 @@ video {
 	display: block;
 	text-align: center;
 	margin: 0;
-	font-size: 60px;
 	letter-spacing: -3px;
 	z-index: 10;
 }
@@ -87,14 +85,38 @@ hr {
 	background-color: #ffffff;
 }
 
+@media only screen and (min-width: 100px) {
+	body {
+		width: 100%;
+	}
+	header {
+		width: 100%;
+	}
+	#name {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		width: 100%;
+	}
+	header {
+		width: 100%;
+	}
+	#name {
+		font-size: 70px;
+	}
+}
+
 @media only screen and (min-width: 1500px) {
 	body {
 		width: 1500px;
 	}
-}
-
-@media only screen and (max-width: 1499) {
-	body {
-		width: 100%;
+	header {
+		width: 1500px;
+	}
+	#name {
+		font-size: 80px;
 	}
 }
