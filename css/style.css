@@ -4,24 +4,25 @@ Author: Sho Matsuzaki
 */
 
 /* Box Model Hack */
-* {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+* { /* Firexfox */ /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
 }
 
 body {
-     color: #ffffff;
-     background-color: #000;
-     font-size: 10px;
-     font-family: 'Roboto', sans-serif;
-     margin: 0 auto;
+    color: #ffffff;
+    background-color: #000;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0 auto;
+    width: 100%;
 }
 
 #header {
 	display: block;
 	position: relative;
 	padding-bottom: 56.25%;
+	width: 100%;
 }
 
 video {
@@ -33,14 +34,12 @@ video {
 	right: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	-o-object-fit: contain;
+	   object-fit: contain;
 }
 
 #name-flex {
 	display: flex;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
 	display: -webkit-flex; 
 
 	align-items: center;
@@ -66,16 +65,52 @@ video {
 #name {
 	position: relative;
 	display: block;
-	text-align: center;
-	margin: 0;
-	letter-spacing: -3px;
 	z-index: 10;
+	font-weight: 700;
+	text-align: center;
+}
+
+#name span {
+	display: block;
+	font-weight: 300;
 }
 
 #container {
-	margin: auto;
-	text-align: center;
-    padding: 50px 30px;
+	margin: 0 30px;
+}
+
+.subheader {
+	margin: 30px 0;
+	display: flex;
+	display: -webkit-flex;
+
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	-webkit-box-pack: flex-end;
+	-ms-flex-pack: flex-end;
+
+	align-items: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+}
+
+#linkedin {
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/linkedin-icon.png');
+	background-size: cover;
+	cursor: pointer;
+	margin: 0 10px;
+}
+
+#email {
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/email-icon.png');
+	background-size: cover;
+	cursor: pointer;
 }
 
 hr {
@@ -86,37 +121,37 @@ hr {
 }
 
 @media only screen and (min-width: 100px) {
-	body {
-		width: 100%;
-	}
-	header {
-		width: 100%;
-	}
 	#name {
-		font-size: 40px;
+		letter-spacing: -1px;
+		font-size: 30px;
+	}
+
+	#name span {
+		letter-spacing: -1px;
+		font-size: 18px;
 	}
 }
 
 @media only screen and (min-width: 768px) {
-	body {
-		width: 100%;
-	}
-	header {
-		width: 100%;
-	}
 	#name {
-		font-size: 70px;
+		letter-spacing: -1px;
+		font-size: 50px;
+	}
+
+	#name span {
+		letter-spacing: -1px;
+		font-size: 27px;
 	}
 }
 
 @media only screen and (min-width: 1500px) {
-	body {
-		width: 1500px;
-	}
-	header {
-		width: 1500px;
-	}
 	#name {
-		font-size: 80px;
+		letter-spacing: -3px;
+		font-size: 70px;
+	}
+
+	#name span {
+		letter-spacing: -3px;
+		font-size: 38px;
 	}
 }
