@@ -94,14 +94,12 @@ video {
 	background-image: url('../img/linkedin-icon.png');
 	background-size: cover;
 	cursor: pointer;
-	margin-right: 10px;
 }
 
 #email {
 	background-image: url('../img/email-icon.png');
 	background-size: cover;
 	cursor: pointer;
-	margin-right: 10px;
 }
 
 .category {
@@ -119,7 +117,6 @@ button {
 	border: none;
 	background: #000000;
 	padding: 0;
-	margin: 0 10px;
 	opacity: .4;
 	transition:.5s;
 	-o-transition:.5s;
@@ -202,7 +199,6 @@ button:focus {
 }
 
 .projectinfo {
-	margin: 20px 0 44px 0;
 	text-align: center;
 }
 
@@ -227,7 +223,7 @@ hr {
 	}
 
 	.subheader {
-		margin: 30px 0;
+		margin: 24px 0;
 	}
 
 	#name {
@@ -241,8 +237,12 @@ hr {
 	}
 
 	#linkedin, #email {
-		width: 30px;
-		height: 30px;
+		width: 23px;
+		height: 23px;
+	}
+
+	#linkedin {
+		margin-right: 6px;
 	}
 
 	.thumbnail {
@@ -251,7 +251,15 @@ hr {
 	}
 
 	.projectinfo, button {
-		font-size: 18px;
+		font-size: 12px;
+	}
+
+	.projectinfo {
+		margin: 14px 0 26px 0;
+	}
+
+	button {
+		margin: 0 4px;
 	}
 }
 
@@ -277,6 +285,7 @@ hr {
 	#linkedin, #email {
 		width: 35px;
 		height: 35px;
+		margin-right: 8px;
 	}
 
 	.thumbnail {
@@ -287,11 +296,23 @@ hr {
 	.projectinfo, button {
 		font-size: 13.5px;
 	}
+
+	button {
+		margin: 0 8px;
+	}
+
+	.projectinfo {
+		margin: 16px 0 36px 0;
+	}
 }
 
 @media only screen and (min-width: 1000px) {
 	.projectinfo, button {
 		font-size: 17px;
+	}
+
+	button {
+		margin: 0 10px;
 	}
 }
 
@@ -317,10 +338,15 @@ hr {
 	#linkedin, #email {
 		width: 40px;
 		height: 40px;
+		margin-right: 10px;
 	}
 
 	.thumbnail {
 		width: 46vw;
 		height: 27vw;
+	}
+
+	.projectinfo {
+		margin: 20px 0 44px 0;
 	}
 }
