@@ -256,7 +256,7 @@ hr {
 
 h3 {
 	display: block;
-	margin: 50px auto 20px auto;
+	margin: 20px auto 20px auto;
 	text-align: center;
 	font-size: 24px;
 	font-weight: 500;
@@ -268,7 +268,7 @@ h3 span {
 
 p {
 	display: block;
-	margin: 10px auto 50px auto;
+	margin: 10px auto 60px auto;
 	font-weight: 300;
 	line-height: 1.5;
 	text-align: left;
@@ -293,8 +293,6 @@ p {
 }
 
 #nav {
-	margin: 0 auto 80px auto;
-
 	display: flex;
 	display: -webkit-flex;
 
@@ -321,15 +319,10 @@ p {
  	color: #ffffff;
 }
 
-.navtext {
-	vertical-align: top;
-}
-
 .arrow {
 	border: solid white;
  	border-width: 0 1px 1px 0;
  	display: inline-block;
- 	padding: 10px;
 }
 
 #leftarrow {
@@ -345,11 +338,8 @@ p {
 }
 
 #home {
-	width: 30px;
-	height: 30px;
 	background-image: url('../img/home-icon.png');
 	background-size: cover;
-	margin: 0 50px;
 	opacity: .4;
 	transition:.5s;
 	-o-transition:.5s;
@@ -435,12 +425,26 @@ p {
 		width: 100%;
 	}
 
+	#nav {
+		margin: 24px auto 24px auto;
+	}
+
 	.navtext {
 		display: none;
 	}
 
 	#home, .navoption {
 		opacity: 1;
+	}
+
+	#home {
+		width: 18px;
+		height: 18px;
+		margin: 0 30px;
+	}
+
+	.arrow {
+		padding: 5px;
 	}
 }
 
@@ -505,8 +509,23 @@ p {
 		width: 500px;
 	}
 
+	#nav {
+		margin: 40px auto 40px auto;
+	}
+
 	.navtext {
 		display: inline;
+		vertical-align: top;
+	}
+
+	.arrow {
+		padding: 8px;
+	}
+
+	#home {
+		width: 26px;
+		height: 26px;
+		margin: 0 40px;
 	}
 }
 
@@ -525,6 +544,20 @@ p {
 
 	#home, .navoption {
 		opacity: .4;
+	}
+
+	#home {
+		width: 30px;
+		height: 30px;
+		margin: 0 50px;
+	}
+
+	#nav {
+		margin: 50px auto 50px auto;
+	}
+
+	.arrow {
+		padding: 10px;
 	}
 }
 
