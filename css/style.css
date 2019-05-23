@@ -293,7 +293,6 @@ p {
 }
 
 #nav {
-	width: 500px;
 	margin: 0 auto 80px auto;
 
 	display: flex;
@@ -323,7 +322,6 @@ p {
 }
 
 .navtext {
-	display: inline;
 	vertical-align: top;
 }
 
@@ -433,7 +431,16 @@ p {
 	}
 
 	p {
+		font-size: 13px;
 		width: 100%;
+	}
+
+	.navtext {
+		display: none;
+	}
+
+	#home, .navoption {
+		opacity: 1;
 	}
 }
 
@@ -494,7 +501,12 @@ p {
 	}
 
 	p {
+		font-size: 15px;
 		width: 500px;
+	}
+
+	.navtext {
+		display: inline;
 	}
 }
 
@@ -509,6 +521,10 @@ p {
 
 	#about, p {
 		width: 600px;
+	}
+
+	#home, .navoption {
+		opacity: .4;
 	}
 }
 
