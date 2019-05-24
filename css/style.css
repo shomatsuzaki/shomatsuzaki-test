@@ -8,10 +8,12 @@ Author: Sho Matsuzaki
 }
 
 body {
+	/*----MAIN STYLE GUIDE----*/
     color: #ffffff;
     background-color: #000;
-    font-size: 14px;
     font-family: 'Roboto', sans-serif;
+    /*-------------------*/
+    font-size: 14px;
     font-weight: 500;
     margin: 0 auto;
     width: 100%;
@@ -163,7 +165,7 @@ button:focus {
 	display: block!important;
 }
 
-#allprojects {
+#allprojects, #printview {
 	display: flex;
 	display: -webkit-flex;
 
@@ -357,6 +359,11 @@ p {
  	-webkit-transition:.5s;
 }
 
+#printview img {
+	width: 100%;
+	padding-bottom: 12px;
+}
+
 /*----------------------------------*/
 /* MEDIA QUERIES                    */
 /*----------------------------------*/
@@ -446,6 +453,14 @@ p {
 	.arrow {
 		padding: 5px;
 	}
+
+	#printview {
+		margin: 30px 0;
+	}
+
+	.printportrait, .printlandscape {
+		width: 91vw;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -527,6 +542,10 @@ p {
 		height: 26px;
 		margin: 0 40px;
 	}
+
+	.printportrait {
+		width: 38vw;
+	}
 }
 
 @media only screen and (min-width: 1000px) {
@@ -559,6 +578,10 @@ p {
 	.arrow {
 		padding: 10px;
 	}
+
+	.printportrait {
+		width: 40vw;
+	}
 }
 
 @media only screen and (min-width: 1500px) {
@@ -584,11 +607,6 @@ p {
 		width: 40px;
 		height: 40px;
 		margin-right: 10px;
-	}
-
-	.thumbnail {
-		width: 46vw;
-		height: 27vw;
 	}
 
 	.projectinfo {
