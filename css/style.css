@@ -13,6 +13,7 @@ body {
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
     /*-------------------*/
+
     font-size: 14px;
     font-weight: 500;
     margin: 0 auto;
@@ -124,29 +125,48 @@ video {
 }
 
 button {
+	position: relative;
+	cursor: pointer;
 	font-weight: 500;
 	text-decoration: none;
 	border: none;
 	padding: 0;
 	opacity: .4;
-	transition:.5s;
-	-o-transition:.5s;
- 	-ms-transition:.5s;
- 	-moz-transition:.5s;
- 	-webkit-transition:.5s;
- 	cursor: pointer;
+	transition: opacity .5s ease;
+	-o-transition: opacity .5s ease;
+ 	-ms-transition: opacity .5s ease;
+ 	-moz-transition: opacity .5s ease;
+ 	-webkit-transition: opacity .5s ease;
+}
+
+button::after {
+	--scale: 0;
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 110%;
+	height: 2px;
+	background: #000;
+	transform: scaleX(var(--scale));
+	transform-origin: var(--x) 50%;
+	transition: transform .3s cubic-bezier(.535, .05, .355, 1);
 }
 
 button:hover {
-	border-bottom-width: 1px;
+	opacity: 1;
+	/*border-bottom-width: 1px;
 	border-bottom-style: solid;
 	padding-bottom: 2px;
-	opacity: 1;
 	transition:.5s;
 	-o-transition:.5s;
  	-ms-transition:.5s;
  	-moz-transition:.5s;
- 	-webkit-transition:.5s;
+ 	-webkit-transition:.5s;*/
+}
+
+button:hover::after {
+	--scale: 1;
 }
 
 button:focus {
@@ -154,10 +174,24 @@ button:focus {
 }
 
 .active {
-	border-bottom-width: 1px;
+	/*border-bottom-width: 1px;
 	border-bottom-style: solid;
-	padding-bottom: 2px;
+	padding-bottom: 2px;*/
 	opacity: 1;
+}
+
+.active::after {
+	--scale: 1;
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 110%;
+	height: 2px;
+	background: #000;
+	transform: scaleX(var(--scale));
+	transform-origin: var(--x) 50%;
+	transition: transform .3s cubic-bezier(.535, .05, .355, 1);
 }
 
 .show {

@@ -1,3 +1,62 @@
+/////////////////////////
+// DIRECTION AWARE HOVER
+/////////////////////////
+
+document.querySelectorAll('button').forEach((elem) => {
+
+  elem.onmouseenter =
+  elem.onmouseleave = (e) => {
+
+    const tolerance = 5
+
+    const left = 0
+    const right = elem.clientWidth
+
+    let x = e.pageX - elem.offsetLeft
+
+    if (x - tolerance < left) x = left
+    if (x + tolerance > right) x = right
+
+    elem.style.setProperty('--x', `${ x }px`)
+
+  }
+
+})
+
+/////////////////////////
+// ANIMATED URL AND TITLE
+/////////////////////////
+
+function wavyurl() {
+    var i, n, s = '';
+
+    for (i = 0; i < 10; i++) {
+        n = Math.floor(Math.sin((Date.now()/200) + (i/2)) * 4) + 4;
+
+        s += String.fromCharCode(0x2581 + n);
+
+        // s += String.fromCharCode(0x2581 + n);
+    }
+
+    window.location.hash = s;
+    // document.title = s;
+
+    setTimeout(wavyurl, 50);
+}
+
+wavyurl();
+
+// var f = ['🌑', '🌒', '🌓', '🌔', '🌝', '🌖', '🌗', '🌘'];
+
+// function animateUrl() {
+//     location.hash = f[Math.floor((Date.now()/100)%f.length)];
+//     document.title = 'Sho Matsuzaki ' + f[Math.floor((Date.now()/100)%f.length)];
+
+//     setTimeout(animateUrl, 50);
+// }
+
+// animateUrl();
+
 ///////////////////////
 // FILTER FUNCTIONALITY
 ///////////////////////
