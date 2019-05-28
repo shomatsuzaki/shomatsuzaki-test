@@ -406,7 +406,11 @@ p {
 		margin: 0 20px;
 	}
 
-	.subheader, .projectvid {
+	.subheader {
+		margin: 16px 0;
+	}
+
+	.projectvid {
 		margin: 24px 0;
 	}
 
