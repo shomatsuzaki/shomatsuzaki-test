@@ -1,3 +1,7 @@
+///////////////////////
+// FILTER FUNCTIONALITY
+///////////////////////
+
 filterSelection("all")
 
 function filterSelection(c) {
@@ -32,7 +36,6 @@ function myRemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
 
 // Add active class to the button that has just been clicked
 var btnContainer = document.getElementById("btncontainer");
