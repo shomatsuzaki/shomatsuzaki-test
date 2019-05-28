@@ -38,8 +38,8 @@ function wavyurl() {
         // s += String.fromCharCode(0x2581 + n);
     }
 
-    window.location.hash = s;
-    // document.title = s;
+    // window.location.hash = s;
+    document.title = s;
 
     setTimeout(wavyurl, 50);
 }
