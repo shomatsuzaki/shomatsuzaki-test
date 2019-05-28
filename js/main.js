@@ -27,24 +27,24 @@ document.querySelectorAll('button').forEach((elem) => {
 // ANIMATED URL AND TITLE
 /////////////////////////
 
-function wavyurl() {
-    var i, n, s = '';
+// function wavyurl() {
+//     var i, n, s = '';
 
-    for (i = 0; i < 10; i++) {
-        n = Math.floor(Math.sin((Date.now()/200) + (i/2)) * 4) + 4;
+//     for (i = 0; i < 10; i++) {
+//         n = Math.floor(Math.sin((Date.now()/200) + (i/2)) * 4) + 4;
 
-        s += String.fromCharCode(0x2581 + n);
+//         s += String.fromCharCode(0x2581 + n);
 
-        // s += String.fromCharCode(0x2581 + n);
-    }
+//         // s += String.fromCharCode(0x2581 + n);
+//     }
 
-    // window.location.hash = s;
-    document.title = s;
+//     // window.location.hash = s;
+//     document.title = s;
 
-    setTimeout(wavyurl, 50);
-}
+//     setTimeout(wavyurl, 20);
+// }
 
-wavyurl();
+// wavyurl();
 
 // var f = ['🌑', '🌒', '🌓', '🌔', '🌝', '🌖', '🌗', '🌘'];
 
