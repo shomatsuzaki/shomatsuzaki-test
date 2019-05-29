@@ -426,20 +426,20 @@ p {
 
 	#name {
 		letter-spacing: -2px;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	#role, h2, #subname, h3 {
 		letter-spacing: -1px;
-		font-size: 12px;
+		font-size: 10px;
 	}
 
 	#name span {
-		width: 22px;
+		width: 16px;
 	}
 
 	#role span {
-		width: 14px;
+		width: 10px;
 	}
 
 	#linkedin, #email {
@@ -518,6 +518,26 @@ p {
 	}
 }
 
+@media only screen and (min-width: 350px) {
+	#name {
+		letter-spacing: -2px;
+		font-size: 20px;
+	}
+
+	#role, h2, #subname, h3 {
+		letter-spacing: -1px;
+		font-size: 12px;
+	}
+
+	#name span {
+		width: 24px;
+	}
+
+	#role span {
+		width: 16px;
+	}
+}
+
 @media only screen and (min-width: 768px) {
 	#container {
 		margin: 0 25px;
@@ -529,7 +549,7 @@ p {
 
 	#name {
 		letter-spacing: -2px;
-		font-size: 50px;
+		font-size: 32px;
 	}
 
 	#role, h2, #subname, h3 {
@@ -538,11 +558,11 @@ p {
 	}
 
 	#name span {
-		width: 55px;
+		width: 38px;
 	}
 
 	#role span {
-		width: 40px;
+		width: 28px;
 	}
 
 	#linkedin, #email {
@@ -620,6 +640,19 @@ p {
 		margin: 0 10px;
 	}
 
+	#name {
+		letter-spacing: -2px;
+		font-size: 44px;
+	}
+
+	#name span {
+		width: 46px;
+	}
+
+	#role span {
+		width: 32px;
+	}
+
 	#about, p {
 		width: 600px;
 	}
@@ -658,7 +691,15 @@ p {
 
 	#name {
 		letter-spacing: -3px;
-		font-size: 70px;
+		font-size: 50px;
+	}
+
+	#name span {
+		width: 54px;
+	}
+
+	#role span {
+		width: 40px;
 	}
 
 	#role, #subname, h3 {
