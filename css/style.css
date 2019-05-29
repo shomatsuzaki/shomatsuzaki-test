@@ -73,9 +73,18 @@ video {
 	color: #fff;
 }
 
-#name span {
+#role {
+	position: relative;
 	display: block;
+	z-index: 10;
 	font-weight: 300;
+	text-align: center;
+	color: #fff;
+}
+
+#name span, #role span {
+	text-align: center;
+	display: inline-block;
 }
 
 .subheader {
@@ -131,6 +140,7 @@ button {
 	text-decoration: none;
 	border: none;
 	padding: 0;
+	background: none;
 	opacity: .4;
 	transition: opacity .5s ease;
 	-o-transition: opacity .5s ease;
@@ -416,12 +426,20 @@ p {
 
 	#name {
 		letter-spacing: -2px;
-		font-size: 30px;
+		font-size: 16px;
 	}
 
-	#name span, h2, #subname, h3 {
+	#role, h2, #subname, h3 {
 		letter-spacing: -1px;
-		font-size: 18px;
+		font-size: 12px;
+	}
+
+	#name span {
+		width: 22px;
+	}
+
+	#role span {
+		width: 14px;
 	}
 
 	#linkedin, #email {
@@ -514,9 +532,17 @@ p {
 		font-size: 50px;
 	}
 
-	#name span, h2, #subname, h3 {
+	#role, h2, #subname, h3 {
 		letter-spacing: -1px;
 		font-size: 27px;
+	}
+
+	#name span {
+		width: 55px;
+	}
+
+	#role span {
+		width: 40px;
 	}
 
 	#linkedin, #email {
@@ -635,7 +661,7 @@ p {
 		font-size: 70px;
 	}
 
-	#name span, #subname, h3 {
+	#role, #subname, h3 {
 		letter-spacing: -2px;
 		font-size: 36px;
 	}
