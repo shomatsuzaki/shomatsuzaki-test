@@ -2,7 +2,7 @@
 // TEXT DE-SCRAMBLER
 ////////////////////
 
-$(document).ready(function() {
+window.onload = function() {
   var $randomname = $('.rand1');
   var $randomrole = $('.rand2');
   var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -82,7 +82,7 @@ $(document).ready(function() {
   }
 
   scraminterval = setInterval(scramble, $timer);
-});
+};
 
 /////////////////////////
 // DIRECTION AWARE HOVER
