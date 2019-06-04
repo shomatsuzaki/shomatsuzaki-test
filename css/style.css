@@ -96,7 +96,31 @@ video {
 	-moz-box-align: center;
 	-ms-flex-align: center;
 	-webkit-align-items: center;
+	z-index: 100;
 }
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+/*#stickyheader {
+	display: flex;
+	display: -webkit-flex;
+
+	align-items: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #ffffff;
+	z-index: 100;
+}*/
 
 .rightaligned {
 	justify-content: flex-end;
@@ -112,7 +136,7 @@ video {
 	-ms-flex-pack: center;
 }
 
-#linkedin {
+.linkedin {
 	background-image: url('../img/linkedin-icon-bk.png');
 	background-size: cover;
 	cursor: pointer;
@@ -124,7 +148,7 @@ video {
  	-webkit-transition: opacity .5s ease;
 }
 
-#email {
+.email {
 	background-image: url('../img/email-icon-bk.png');
 	background-size: cover;
 	cursor: pointer;
@@ -136,7 +160,7 @@ video {
  	-webkit-transition: opacity .5s ease;
 }
 
-#linkedin:hover, #email:hover {
+.linkedin:hover, .email:hover {
 	opacity: 1;
 	transition: opacity .5s ease;
 	-o-transition: opacity .5s ease;
@@ -322,6 +346,7 @@ hr {
 	height: 1px;
 	color: #000;
 	background-color: #000;
+	margin: 0;
 }
 
 #projectcontainer {
@@ -441,12 +466,14 @@ p {
 /*----------------------------------*/
 
 @media only screen and (min-width: 100px) {
-	#container {
-		margin: 0 20px;
+	#container, #stickyheader {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	.subheader {
-		margin: 16px 0;
+		padding-top: 16px;
+		padding-bottom: 16px;
 	}
 
 	.projectvid {
@@ -477,12 +504,12 @@ p {
 		width: 10px;
 	}
 
-	#linkedin, #email {
+	.linkedin, .email {
 		width: 23px;
 		height: 23px;
 	}
 
-	#linkedin {
+	.linkedin {
 		margin-right: 6px;
 	}
 
@@ -574,12 +601,18 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-	#container {
-		margin: 0 25px;
+	#container, #stickyheader {
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 
-	.subheader, .projectvid {
-		margin: 30px 0;
+	.subheader {
+		padding-top: 28px;
+		padding-bottom: 28px;
+	}
+
+	.projectvid {
+		margin: 28px 0;
 	}
 
 	#name {
@@ -600,7 +633,7 @@ p {
 		width: 24px;
 	}
 
-	#linkedin, #email {
+	.linkedin, .email {
 		width: 35px;
 		height: 35px;
 		margin-right: 8px;
@@ -723,11 +756,17 @@ p {
 }
 
 @media only screen and (min-width: 1500px) {
-	#container {
-		margin: 0 30px;
+	#container, #stickyheader {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 
-	.subheader, .projectvid {
+	.subheader {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
+	.projectvid {
 		margin: 35px 0;
 	}
 
@@ -749,7 +788,7 @@ p {
 		font-size: 36px;
 	}
 
-	#linkedin, #email {
+	.linkedin, .email {
 		width: 40px;
 		height: 40px;
 		margin-right: 10px;
